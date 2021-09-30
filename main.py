@@ -43,3 +43,18 @@ def redraw_game_window():
     win.blit(text_score, (370, 10))
 
     pygame.display.update()
+
+#Instance of the enemy class:
+enemy = Enemy(100,410,64,64,450)
+
+#Instance of the player class:
+player = Player(300,410,64,64)
+
+#Bullets have been shot:
+bullets = []
+shootLoop = 0
+#Pending lives:
+last = Lives(10,10)
+second = Lives(50,10)
+first = Lives(90,10)
+lives = [last, second, first]
