@@ -25,3 +25,21 @@ text = font_gameover.render('GAME OVER!', 1, (0,0,0))
 
 background_sound = pygame.mixer.music.load('sounds/music.mp3')
 pygame.mixer.music.play()
+
+def redraw_game_window():
+    win.blit(background, (0,0))
+
+    for bullet in bullets:
+        bullet.draw(win)
+
+    player.draw(win)
+
+    enemy.draw(win)
+
+    for life in lives:
+        life.draw(win)
+
+    text_score = font_score.render('Score: ' + str(score), 1, (0, 0, 0))
+    win.blit(text_score, (370, 10))
+
+    pygame.display.update()
