@@ -2,29 +2,29 @@ import pygame
 import os.path
 
 class Enemy:
-    walk_right = [pygame.image.load(os.path.join('Images', 'R1E.png')),
-                  pygame.image.load(os.path.join('Images', 'R2E.png')),
-                  pygame.image.load(os.path.join('Images', 'R3E.png')),
-                  pygame.image.load(os.path.join('Images', 'R4E.png')),
-                  pygame.image.load(os.path.join('Images', 'R5E.png')),
-                  pygame.image.load(os.path.join('Images', 'R6E.png')),
-                  pygame.image.load(os.path.join('Images', 'R7E.png')),
-                  pygame.image.load(os.path.join('Images', 'R8E.png')),
-                  pygame.image.load(os.path.join('Images', 'R9E.png')),
-                  pygame.image.load(os.path.join('Images', 'R10E.png')),
-                  pygame.image.load(os.path.join('Images', 'R11E.png'))]
+    walk_right = [pygame.image.load(os.path.join('images', 'R1E.png')),
+                  pygame.image.load(os.path.join('images', 'R2E.png')),
+                  pygame.image.load(os.path.join('images', 'R3E.png')),
+                  pygame.image.load(os.path.join('images', 'R4E.png')),
+                  pygame.image.load(os.path.join('images', 'R5E.png')),
+                  pygame.image.load(os.path.join('images', 'R6E.png')),
+                  pygame.image.load(os.path.join('images', 'R7E.png')),
+                  pygame.image.load(os.path.join('images', 'R8E.png')),
+                  pygame.image.load(os.path.join('images', 'R9E.png')),
+                  pygame.image.load(os.path.join('images', 'R10E.png')),
+                  pygame.image.load(os.path.join('images', 'R11E.png'))]
 
-    walk_left = [pygame.image.load(os.path.join('Images', 'L1E.png')),
-                 pygame.image.load(os.path.join('Images', 'L2E.png')),
-                 pygame.image.load(os.path.join('Images', 'L3E.png')),
-                 pygame.image.load(os.path.join('Images', 'L4E.png')),
-                 pygame.image.load(os.path.join('Images', 'L5E.png')),
-                 pygame.image.load(os.path.join('Images', 'L6E.png')),
-                 pygame.image.load(os.path.join('Images', 'L7E.png')),
-                 pygame.image.load(os.path.join('Images', 'L8E.png')),
-                 pygame.image.load(os.path.join('Images', 'L9E.png')),
-                 pygame.image.load(os.path.join('Images', 'L10E.png')),
-                 pygame.image.load(os.path.join('Images', 'L11E.png')), ]
+    walk_left = [pygame.image.load(os.path.join('images', 'L1E.png')),
+                 pygame.image.load(os.path.join('images', 'L2E.png')),
+                 pygame.image.load(os.path.join('images', 'L3E.png')),
+                 pygame.image.load(os.path.join('images', 'L4E.png')),
+                 pygame.image.load(os.path.join('images', 'L5E.png')),
+                 pygame.image.load(os.path.join('images', 'L6E.png')),
+                 pygame.image.load(os.path.join('images', 'L7E.png')),
+                 pygame.image.load(os.path.join('images', 'L8E.png')),
+                 pygame.image.load(os.path.join('images', 'L9E.png')),
+                 pygame.image.load(os.path.join('images', 'L10E.png')),
+                 pygame.image.load(os.path.join('images', 'L11E.png')), ]
 
     def __init__(self, x, y, width, height, end):
         self.x = x #X argument of enemy location
@@ -59,8 +59,8 @@ class Enemy:
 
     def hit(self):
         if self.health > 0:
-            hitSound = pygame.mixer.Sound(os.path.join('Sounds', 'hit.wav'))
-            hitSound.play()
+            hit_sound = pygame.mixer.Sound(os.path.join('sounds', 'hit.wav'))
+            hit_sound.play()
             self.health -= 1
         else:
             self.visible = False

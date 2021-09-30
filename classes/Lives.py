@@ -8,4 +8,4 @@ class Lives:
         self.y = y
 
     def draw(self,win):
-        win.blit(pygame.image.load(os.path.join('Images', 'life.png')), (self.x, self.y))
+        win.blit(pygame.image.load(os.path.join('images', 'life.png')), (self.x, self.y))

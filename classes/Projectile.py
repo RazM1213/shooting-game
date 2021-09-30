@@ -17,5 +17,5 @@ class Projectile:
 
     @classmethod
     def play_sound(cls):
-        bulletSound = pygame.mixer.Sound(os.path.join('Sounds', 'bullet.wav'))
-        bulletSound.play()
+        bullet_sound = pygame.mixer.Sound(os.path.join('sounds', 'bullet.wav'))
+        bullet_sound.play()

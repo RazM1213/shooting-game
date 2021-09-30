@@ -2,25 +2,25 @@ import pygame
 import os.path
 
 class Player:
-    walk_right = [pygame.image.load(os.path.join('Images', 'R1.png')),
-                  pygame.image.load(os.path.join('Images', 'R2.png')),
-                  pygame.image.load(os.path.join('Images', 'R3.png')),
-                  pygame.image.load(os.path.join('Images', 'R4.png')),
-                  pygame.image.load(os.path.join('Images', 'R5.png')),
-                  pygame.image.load(os.path.join('Images', 'R6.png')),
-                  pygame.image.load(os.path.join('Images', 'R7.png')),
-                  pygame.image.load(os.path.join('Images', 'R8.png')),
-                  pygame.image.load(os.path.join('Images', 'R9.png'))]
+    walk_right = [pygame.image.load(os.path.join('images', 'R1.png')),
+                  pygame.image.load(os.path.join('images', 'R2.png')),
+                  pygame.image.load(os.path.join('images', 'R3.png')),
+                  pygame.image.load(os.path.join('images', 'R4.png')),
+                  pygame.image.load(os.path.join('images', 'R5.png')),
+                  pygame.image.load(os.path.join('images', 'R6.png')),
+                  pygame.image.load(os.path.join('images', 'R7.png')),
+                  pygame.image.load(os.path.join('images', 'R8.png')),
+                  pygame.image.load(os.path.join('images', 'R9.png'))]
 
-    walk_left = [pygame.image.load(os.path.join('Images', 'L1.png')),
-                 pygame.image.load(os.path.join('Images', 'L2.png')),
-                 pygame.image.load(os.path.join('Images', 'L3.png')),
-                 pygame.image.load(os.path.join('Images', 'L4.png')),
-                 pygame.image.load(os.path.join('Images', 'L5.png')),
-                 pygame.image.load(os.path.join('Images', 'L6.png')),
-                 pygame.image.load(os.path.join('Images', 'L7.png')),
-                 pygame.image.load(os.path.join('Images', 'L8.png')),
-                 pygame.image.load(os.path.join('Images', 'L9.png'))]
+    walk_left = [pygame.image.load(os.path.join('images', 'L1.png')),
+                 pygame.image.load(os.path.join('images', 'L2.png')),
+                 pygame.image.load(os.path.join('images', 'L3.png')),
+                 pygame.image.load(os.path.join('images', 'L4.png')),
+                 pygame.image.load(os.path.join('images', 'L5.png')),
+                 pygame.image.load(os.path.join('images', 'L6.png')),
+                 pygame.image.load(os.path.join('images', 'L7.png')),
+                 pygame.image.load(os.path.join('images', 'L8.png')),
+                 pygame.image.load(os.path.join('images', 'L9.png'))]
 
     def __init__(self, x, y, width, height):
         self.x = x #The x argument of the char location
